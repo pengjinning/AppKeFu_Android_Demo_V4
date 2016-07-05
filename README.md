@@ -10,7 +10,7 @@
 <img src="/images/chat_plus.png" alt="扩展" width="260px" />
 <img src="/images/chat_buy.png" alt="电商" width="260px" />
 <img src="/images/chat_rate.png" alt="满意度" width="260px" />
-<img src="/images/chat_robot.png" alt="智能问答" width="1260px" />
+<img src="/images/chat_robot.png" alt="智能问答" width="260px" />
 <img src="/images/chat_voice.png" alt="语音" width="260px" />
 
 
