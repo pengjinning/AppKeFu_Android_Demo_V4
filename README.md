@@ -3,15 +3,15 @@
 
 ## 预览
 
-![功能一览](/images/chat_list.png =160)
-![常见问题](/images/chat_faq.png =160)
-![个人标签](/images/chat_tags.png =160)
-![留言](/images/chat_leavemsg.png =160)
-![扩展](/images/chat_plus.png =160)
-![电商](/images/chat_buy.png =160)
-![满意度](/images/chat_rate.png =160)
-![智能问答](/images/chat_robot.png =160)
-![语音](/images/chat_voice.png =160)
+<img src="/images/chat_list.png" alt="功能一览" width="160px" />
+<img src="/images/chat_faq.png" alt="常见问题" width="160px" />
+<img src="/images/chat_tags.png" alt="个人标签" width="160px" />
+<img src="/images/chat_leavemsg.png" alt="留言" width="160px" />
+<img src="/images/chat_plus.png" alt="扩展" width="160px" />
+<img src="/images/chat_buy.png" alt="电商" width="160px" />
+<img src="/images/chat_rate.png" alt="满意度" width="160px" />
+<img src="/images/chat_robot.png" alt="智能问答" width="160px" />
+<img src="/images/chat_voice.png" alt="语音" width="160px" />
 
 
 ## 使用指南
