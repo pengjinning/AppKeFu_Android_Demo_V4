@@ -3,15 +3,15 @@
 
 ## 预览
 
-![功能一览](/images/chat_list.png "list")
-![常见问题](/images/chat_faq.png "faq")
-![个人标签](/images/chat_tags.png "tags")
-![留言](/images/chat_leavemsg.png "leavemsg")
-![扩展](/images/chat_plus.png "plus")
-![电商](/images/chat_buy.png "buy")
-![满意度](/images/chat_rate.png "rate")
-![智能问答](/images/chat_robot.png "robot")
-![语音](/images/chat_voice.png "voice")
+![功能一览](/images/chat_list.png =160 "list")
+![常见问题](/images/chat_faq.png =160 "faq")
+![个人标签](/images/chat_tags.png =160 "tags")
+![留言](/images/chat_leavemsg.png =160 "leavemsg")
+![扩展](/images/chat_plus.png =160 "plus")
+![电商](/images/chat_buy.png =160 "buy")
+![满意度](/images/chat_rate.png =160 "rate")
+![智能问答](/images/chat_robot.png =160 "robot")
+![语音](/images/chat_voice.png =160 "voice")
 
 
 ## 使用指南
