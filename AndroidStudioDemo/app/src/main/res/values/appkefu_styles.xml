@@ -1,0 +1,89 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="appkefu_theme_no_titlebar" parent="android:Theme.NoTitleBar">         
+	</style>
+    
+    <style name="appkefu_pulltofresh_top_loading_small" parent="@android:style/Widget.ProgressBar.Small">
+		<item name="android:indeterminateDrawable">@anim/appkefu_loading</item>
+		<item name="android:layout_width">21dip</item> 
+		<item name="android:layout_height">21dip</item>
+		<item name="android:layout_gravity">center_vertical</item>
+	</style>
+	
+    <style name="appkefu_chat_content_date_style">
+	    <item name="android:minHeight">50dp</item>
+	    <item name="android:gravity">left|center</item>    
+		<item name="android:textColor">#000000</item>   
+		<item name="android:textSize">15sp</item>      
+		<item name="android:lineSpacingExtra">2dp</item>   
+		<item name="android:clickable">true</item>   
+		<item name="android:focusable">true</item>   
+		<item name="android:background">#bfbfbf</item> 
+	</style>
+	
+    <!--  -->
+    <style name="appkefuInteractionPositiveButton">
+        <item name="android:background">@drawable/appkefu_dialog_positive_button</item>
+        <item name="android:textColor">@drawable/appkefu_dialog_positive_button_text</item>
+        <item name="android:textSize">@dimen/appkefu_dialog_button_text</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="appkefuInteractionNegativeButton">
+        <item name="android:background">@drawable/appkefu_dialog_negative_button</item>
+        <item name="android:textColor">@drawable/appkefu_dialog_negative_button_text</item>
+        <item name="android:textSize">@dimen/appkefu_dialog_button_text</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="appkefuInteractionDialogTitle">
+        <item name="android:textColor">@color/appkefu_dialog_title_text</item>
+        <item name="android:textSize">@dimen/appkefu_dialog_title_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="appkefuInteractionDialogTitleNoBody">
+        <item name="android:textColor">@color/appkefu_dialog_title_text</item>
+        <item name="android:textSize">@dimen/appkefu_dialog_title_text</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="appkefuInteractionDialogBody">
+        <item name="android:textColor">@color/appkefu_dialog_body_text</item>
+        <item name="android:textSize">@dimen/appkefu_dialog_body_text</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:autoLink">all</item>
+    </style>
+    
+    
+    <!--  -->
+
+</resources>
+
+
+
+
+
+
+
+

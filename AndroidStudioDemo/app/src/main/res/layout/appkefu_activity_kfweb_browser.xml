@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="#fff">
+   
+   <RelativeLayout
+        android:id="@+id/appkefu_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/appkefu_title_bar"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/appkefu_titlebar_back_btn"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/appkefu_title_bar"
+            android:text="@string/appkefu_titlebar_backbtn_title"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/appkefu_titlebar_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:text="@string/appkefu_webbrowser_title"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+   <com.appkefu.lib.ui.pulltorefresh.KFPullToRefreshWebView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/appkefu_web_browser"
+        android:layout_below="@+id/appkefu_title_bar"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"/>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

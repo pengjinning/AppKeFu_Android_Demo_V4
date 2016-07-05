@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:paddingLeft="@dimen/appkefu_dialog_side_padding"
+        android:paddingRight="@dimen/appkefu_dialog_side_padding" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/appkefu_dialog_vertical_padding"
+            android:paddingTop="@dimen/appkefu_dialog_vertical_padding" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/appkefu_dialog_background"
+                android:orientation="vertical"
+                android:padding="16dp" >
+                
+                <TextView 
+                    android:id="@+id/appkefu_rate_tip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="#000"
+					android:textSize="18sp"                    
+                    android:text="@string/appkefu_rate_tip"/>
+
+                <LinearLayout
+                    android:id="@+id/appkefu_rate_mainlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@+id/appkefu_rate_tip" >
+
+                    <Button
+                        android:id="@+id/appkefu_ratebtn_1"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:background="@drawable/appkefu_star_unselected" />
+
+                    <Button
+                        android:id="@+id/appkefu_ratebtn_2"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:background="@drawable/appkefu_star_unselected" />
+
+                    <Button
+                        android:id="@+id/appkefu_ratebtn_3"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:background="@drawable/appkefu_star_unselected" />
+
+                    <Button
+                        android:id="@+id/appkefu_ratebtn_4"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:background="@drawable/appkefu_star_unselected" />
+
+                    <Button
+                        android:id="@+id/appkefu_ratebtn_5"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:background="@drawable/appkefu_star_unselected" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/appkefu_rate_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/appkefu_rate_mainlayout" >
+
+                    <TextView
+                        android:id="@+id/appkefu_rate_comment_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:textColor="#000000"
+                        android:text="@string/appkefu_dialog_rate_comment" />
+                    
+                    <TextView 
+                        android:id="@+id/appkefu_rate_value_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/appkefu_rate_comment_label"
+                        android:textColor="#000000"
+                        android:text="@string/appkefu_dialog_rate_good"/>
+
+                    <EditText
+                        android:id="@+id/appkefu_rate_comment_textedit"
+                        android:layout_width="match_parent"
+                        android:layout_height="100sp"
+                        android:layout_below="@+id/appkefu_rate_comment_label"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginRight="20sp"/>                  
+                    
+                </RelativeLayout>
+                
+                <LinearLayout
+                    android:id="@+id/appkefu_rate_btnlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@+id/appkefu_rate_comment">
+                    
+                     <Button
+                        android:id="@+id/appkefu_rate_comment_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/appkefu_inputbar_recordvoicebtn"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="提交"
+                        android:textSize="18sp" />
+                     
+                     <Button
+                        android:id="@+id/appkefu_rate_comment_nosub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/appkefu_inputbar_recordvoicebtn"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="不评价"
+                        android:textSize="18sp" />
+                     
+                     <Button
+                        android:id="@+id/appkefu_rate_comment_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/appkefu_inputbar_recordvoicebtn"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="取消"
+                        android:textSize="18sp" />
+                    
+                </LinearLayout>
+  
+            </RelativeLayout>
+        </FrameLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ 
+    <LinearLayout 
+        android:id="@+id/appkefu_message_item_timestamp_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        
+        <TextView 
+            android:id="@+id/appkefu_message_item_timestamp_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="timestamp"
+            android:visibility="gone"/>
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/appkefu_message_item_content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        
+       <!-- 此处显示默认形状的头像，比如：如下需要显示方形头像，需要打开下方imageview的注释，然后将kfcircleimageview注释掉 -->
+        <!--
+        <ImageView 
+            android:id="@+id/appkefu_message_item_header"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/appkefu_ic_sex_male"
+            android:contentDescription="@string/appkefu_imageview_content_description"/>
+         -->
+        
+        <!-- 显示圆形头像 -->
+        <com.appkefu.lib.ui.widgets.KFCircleImageView  
+            android:id="@+id/appkefu_message_item_header"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/appkefu_ic_sex_male"
+            android:contentDescription="@string/appkefu_imageview_content_description"/>
+        
+        <TextView 
+            android:id="@+id/appkefu_message_item_content"
+            style="@style/appkefu_chat_content_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/appkefu_message_item_header"
+            android:autoLink="phone|email"
+            android:textColorLink="#0082CB"
+            android:background="@drawable/appkefu_messageitem_tocontent"
+            />
+
+        <ImageView
+            android:id="@+id/appkefu_message_item_content_image"
+            style="@style/appkefu_chat_content_date_style"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/appkefu_message_item_header"
+            android:background="@drawable/appkefu_messageitem_tocontent"
+            android:visibility="gone"
+            />
+        
+		<ProgressBar 
+            android:id="@+id/appkefu_message_item_send_progress"
+            style="@style/appkefu_pulltofresh_top_loading_small"
+            android:layout_toLeftOf="@+id/appkefu_message_item_content"
+            android:layout_marginTop="5dp"/> 
+            
+		<ImageView 
+            android:id="@+id/appkefu_message_item_send_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/appkefu_message_item_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/appkefu_error"
+            android:contentDescription="@string/appkefu_imageview_content_description"
+            android:visibility="gone"/>
+        
+        <TextView 
+            android:id="@+id/appkefu_message_item_content_voice"
+            style="@style/appkefu_chat_content_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/appkefu_message_item_header"
+            android:background="@drawable/appkefu_messageitem_tocontent"
+            android:visibility="gone"
+            />
+        
+        <TextView 
+            android:id="@+id/appkefu_message_item_voice_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/appkefu_message_item_content_voice"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"/>
+
+        <ProgressBar 
+            android:id="@+id/appkefu_message_item_voicesend_progress"
+            style="@style/appkefu_pulltofresh_top_loading_small"
+            android:layout_toLeftOf="@+id/appkefu_message_item_content_voice"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:visibility="gone"/> 
+                
+    </RelativeLayout>   
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

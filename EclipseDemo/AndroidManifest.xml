@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appkefu.demo2"
+    android:versionCode="90"
+    android:versionName="20151126" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="21" />
+
+    <!-- 聊天界面拍照发送图片 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 登录接口：检测/监听网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 登录接口：访问网络，连接im服务器 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 聊天寂寞：收到消息后震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 聊天界面：录制语音,将语音文件保存在手机内存卡，检测是否已经装载文件系统 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 后台收到消息的时候，休眠状态唤醒CPU，将消息显示在通知栏 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 可选：监听手机重启自动重连服务器 -->
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> 
+	<!-- 可选：webview上传文件 -->
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/Anim_style2" >
+        <activity
+            android:name="com.appkefu.demo2.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 请到 http://admin.appkefu.com/AppKeFu/admin/ 申请appkey -->
+        <meta-data
+            android:name="com.appkefu.lib.appkey"
+            android:value="6f8103225b6ca0cfec048ecc8702dbce" />
+
+        <!-- 聊天窗口, 可通过修改layout文件appkefu_activity_kfvip_chat.xml自定义窗口UI -->
+        <activity android:name="com.appkefu.lib.ui.activity.KFChatActivity" 
+            	  android:theme="@style/appkefu_theme_no_titlebar"
+            	  android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <!-- 设置页面，点击聊天窗口右上角按钮进入，可清空聊天记录 -->
+        <activity android:name="com.appkefu.lib.ui.activity.KFSettingsActivity" 
+            android:theme="@style/appkefu_theme_no_titlebar" />
+        <!-- 常见问题类别页面，点击聊天页面输入框下方扩展面板:常见问题按钮进入 -->
+        <activity android:name="com.appkefu.lib.ui.activity.KFFAQActivity" 
+            android:theme="@style/appkefu_theme_no_titlebar"/>
+        <!-- 常见问题详情页面， -->
+        <activity android:name="com.appkefu.lib.ui.activity.KFFAQDetailActivity" 
+            android:theme="@style/appkefu_theme_no_titlebar"/>
+        <!-- 满意度评价页面 -->
+        <activity android:name="com.appkefu.lib.ui.activity.KFRateActivity"
+            android:theme="@style/appkefu_theme_no_titlebar"/>
+        <!-- 留言页面 -->
+        <activity android:name="com.appkefu.lib.ui.activity.KFLeaveMessageActivity"
+            android:theme="@style/appkefu_theme_no_titlebar"/>
+        <!-- 内嵌浏览器页面，打开网址 -->
+        <activity android:name="com.appkefu.lib.ui.activity.KFWebBrowserActivity" 
+            android:theme="@style/appkefu_theme_no_titlebar"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 此处data的android:scheme请填写您App的包名,保持android:host, 如下所示： -->
+                <data android:scheme="com.appkefu.demo2" android:host="appkefu_url" />
+            </intent-filter>
+        </activity>
+                
+        <!-- 发送语音辅助service -->
+        <service
+            android:name="com.appkefu.lib.soundrecorder.KFRecorderService"/>
+
+        <!-- im长连接 主service -->
+        <service
+            android:name="com.appkefu.lib.service.KFMainService">
+            <intent-filter android:priority="1000"> <!-- 可选 android:priority = "1000"这个属性设置最高优先级，1000是最高值，如果数字越小则优先级越低 -->
+                <action android:name="com.appkefu.lib.action.kefu.LOGIN_WITH_OPENUDID"/>
+                <action android:name="com.appkefu.lib.action.DISCONNECT" />
+                <action android:name="com.appkefu.lib.action.TOGGLE" />
+                <action android:name="com.appkefu.lib.action.SEND" />
+                <action android:name="com.appkefu.lib.action.NETWORK_STATUS_CHANGED" />
+                <action android:name="com.appkefu.lib.action.XMPP.MESSAGE_RECEIVED" />
+            </intent-filter>
+        </service>
+
+        <!-- 获取OpenUDID, 用于唯一标示用户 -->
+        <service android:name="com.appkefu.OpenUDID.OpenUDID_service" >
+            <intent-filter>
+                <action android:name="org.openudid.GETUDID" />
+            </intent-filter>
+        </service>
+
+        <!-- 可选：监听网络变化 -->
+        <receiver android:name="com.appkefu.lib.receivers.KFNetworkConnectivityReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <!-- 可选：监听手机重启，方便重连im服务器, 需要配合权限RECEIVE_BOOT_COMPLETED使用-->
+        <receiver android:name="com.appkefu.lib.receivers.KFBootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <!-- 可选：监听手机连接电源状态,如果已经连接电源自动尝试重连 -->
+        <receiver android:name="com.appkefu.lib.receivers.KFPowerReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <!-- 监听客服发送过来的消息 -->
+        <receiver android:name="com.appkefu.lib.receivers.KFMessageReceiver">
+            <intent-filter>
+                <action android:name="com.appkefu.lib.action.XMPP.MESSAGE_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <!-- 可选：检测屏幕是否解锁,以便重连服务器 -->
+        <receiver android:name="com.appkefu.lib.receivers.KFScreenReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" /><!-- 监听屏幕解锁 -->
+            </intent-filter>
+        </receiver>
+        <!-- 定时检测是否需要重连im服务器,以便重连服务器 -->
+        <receiver android:name="com.appkefu.lib.receivers.KFAlarmReceiver">
+            <intent-filter>
+                <action android:name="com.appkefu.lib.action.LOGIN_ALARM" />
+            </intent-filter>
+        </receiver>
+        
+
+        <activity
+            android:name="com.appkefu.demo2.activity.TagListActivity"
+            android:label="@string/title_activity_tag_list" >
+        </activity>
+        <activity
+            android:name="com.appkefu.demo2.activity.ChangeTagActivity"
+            android:label="@string/title_activity_change_tag" >
+        </activity>
+    </application>
+
+</manifest>

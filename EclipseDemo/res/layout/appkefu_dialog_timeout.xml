@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+~ Copyright (c) 2014, appkefu, Inc. All Rights Reserved.
+~ Please refer to the LICENSE file for the terms and conditions
+~ under which redistribution and use of this file is permitted.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="center_vertical">
+    <ScrollView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/appkefu_dialog_side_padding"
+                android:paddingRight="@dimen/appkefu_dialog_side_padding"
+                android:fadingEdge="none">
+        <FrameLayout android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:paddingTop="@dimen/appkefu_dialog_vertical_padding"
+                     android:paddingBottom="@dimen/appkefu_dialog_vertical_padding">
+            <LinearLayout android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:padding="16dp"
+                          android:background="@drawable/appkefu_dialog_background">
+                          
+                <TextView android:id="@+id/appkefu_dialog_timeout_title"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="8dp"
+                          style="@style/appkefuInteractionDialogTitle"
+                          android:text="@string/appkefu_timeout"/>
+                
+                <Button android:id="@+id/appkefu_dialog_request_again"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="8dp"
+                        style="@style/appkefuInteractionPositiveButton"
+                        android:text="@string/appkefu_request_again"/>
+                
+                <Button android:id="@+id/appkefu_dialog_cancel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="8dp"
+                        style="@style/appkefuInteractionNegativeButton"
+                        android:text="@string/appkefu_cancel"/>
+
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+
+
+
+
+

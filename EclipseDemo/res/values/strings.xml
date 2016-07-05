@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">微客服3(客服Demo)</string>
+    <string name="chat_with_kefu_before">在线咨询售前</string>
+    <string name="chat_with_kefu_after">在线咨询售后</string>
+    <string name="chat_with_e_commence">电子商务在线咨询</string>
+    <string name="chat_with_robot">默认机器人应答</string>
+    <string name="set_user_tags">设置用户标签</string>
+    <string name="clear_message_records">清空聊天记录</string>
+    <string name="unread_message_count">未读消息数目</string>
+    <string name="show_faq">常见问题FAQ</string>
+    <string name="leave_message">留言</string>
+    <string name="title_activity_tag_list">TagListActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_change_tag">ChangeTagActivity</string>
+
+</resources>

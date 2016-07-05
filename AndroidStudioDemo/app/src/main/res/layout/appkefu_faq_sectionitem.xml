@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/appkefu_faq_itembg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/appkefu_faq_question"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:ellipsize="end"
+        android:paddingLeft="3dp"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="matrix"
+        android:src="@drawable/appkefu_faq_disclosurearrow"
+        android:contentDescription="@string/appkefu_imageview_content_description"/>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="appkefu_black">#000000</color>
+    <color name="appkefu_sc_transparent_background">#00111111</color>
+    <color name="appkefu_face_bg">#eef1f4</color>
+    
+    <color name="appkefu_dialog_background">#FFFFFF</color>
+    <color name="appkefu_dialog_title_text">#000000</color>
+    <color name="appkefu_dialog_body_text">#444444</color>
+    <color name="appkefu_dialog_form_text">#000000</color>
+    
+    <color name="appkefu_dialog_button_negative">#DDDDDD</color>
+    <color name="appkefu_dialog_button_negative_text">#000000</color>
+    <color name="appkefu_dialog_button_negative_disabled">#EBEBEB</color>
+    <color name="appkefu_dialog_button_negative_disabled_text">#B9B9B9</color>
+    <color name="appkefu_dialog_button_negative_focused">#B3B3B3</color>
+    <color name="appkefu_dialog_button_negative_focused_text">#000000</color>
+    <color name="appkefu_dialog_button_negative_pressed">#B3B3B3</color>
+    <color name="appkefu_dialog_button_negative_pressed_text">#000000</color>
+    <color name="appkefu_dialog_button_negative_border_focused">#25A5CF</color>
+
+    <color name="appkefu_dialog_button_positive">#56B8D8</color>
+    <color name="appkefu_dialog_button_positive_text">#000000</color>
+    <color name="appkefu_dialog_button_positive_disabled">#D6E9F0</color>
+    <color name="appkefu_dialog_button_positive_disabled_text">#9BB8C2</color>
+    <color name="appkefu_dialog_button_positive_focused">#2699BF</color>
+    <color name="appkefu_dialog_button_positive_focused_text">#000000</color>
+    <color name="appkefu_dialog_button_positive_pressed">#2699BF</color>
+    <color name="appkefu_dialog_button_positive_pressed_text">#000000</color>
+    <color name="appkefu_dialog_button_positive_border_focused">#00769D</color>
+        
+</resources>

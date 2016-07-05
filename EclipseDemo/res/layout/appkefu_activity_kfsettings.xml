@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee" >
+
+    <RelativeLayout
+        android:id="@+id/appkefu_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/appkefu_title_bar"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/appkefu_titlebar_back_btn"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/appkefu_title_bar"
+            android:text="@string/appkefu_titlebar_backbtn_title"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/appkefu_titlebar_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:text="@string/appkefu_settings_title"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appkefu_title_bar"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/appkefu_clear_message_records"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/appkefu_inputbar_recordvoicebtn"
+                android:text="@string/appkefu_settings_clearmessage"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/appkefu_support"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/appkefu_inputbar_recordvoicebtn"
+                android:text="@string/appkefu_settings_support"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee" >
+
+    <RelativeLayout
+        android:id="@+id/appkefu_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/appkefu_title_bar"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/appkefu_titlebar_back_btn"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/appkefu_title_bar"
+            android:text="@string/appkefu_titlebar_backbtn_title"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/appkefu_titlebar_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:text="@string/appkefu_faq_title"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        
+         <ProgressBar 
+			android:id="@+id/appkefu_faq_title_progress" 
+			style="@style/appkefu_pulltofresh_top_loading_small"
+			android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+			android:layout_marginRight="5dip"/>
+                
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/appkefu_search_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appkefu_title_bar"
+        android:background="@drawable/appkefu_faq_bg_nor"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/appkefu_faq_searchbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/appkefu_search_bar_edit_bg"
+            android:drawableLeft="@drawable/appkefu_search_bar_icon_normal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="搜索"
+            android:singleLine="true"
+            android:textColor="#000" >
+        </EditText>
+    </LinearLayout>
+    
+    
+    <ExpandableListView 
+        android:id="@+id/appkefu_faq_section_item_listview"
+        android:layout_below="@+id/appkefu_search_bar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+        <!--android:childIndicator="@drawable/appkefu_ic_sex_male" -->
+    
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

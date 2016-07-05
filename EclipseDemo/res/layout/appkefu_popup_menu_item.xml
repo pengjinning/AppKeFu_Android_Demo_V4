@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appkefu_menu_item_textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/appkefu_popup_menu_item_bg"
+    android:clickable="false"
+    android:drawablePadding="3.0dip"
+    android:gravity="center_vertical"
+    android:padding="7.0dip"
+    android:text="Item"
+    android:textColor="#000"
+    android:textSize="18.0sp" />
