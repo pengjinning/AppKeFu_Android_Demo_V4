@@ -14,10 +14,10 @@
 <img src="/images/chat_leavemsg.png" alt="留言" width="260px" />
 
 
-## 使用指南
+## 开发文档
 
 
-http://admin.appkefu.com/AppKeFu/tutorial-android3.html
+http://admin.appkefu.com/AppKeFu/doc/android.html
 
 
 ## 接口一览
