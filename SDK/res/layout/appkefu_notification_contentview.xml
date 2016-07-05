@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/appkefu_notification_contentview_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/appkefu_notification_icon"
+        android:contentDescription="@string/appkefu_imageview_contentdescription" />
+
+    <RelativeLayout 
+        android:id="@+id/appkefu_notification_contentview_titlelayout" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/appkefu_notification_contentview_icon"
+        >
+
+        <TextView
+            android:id="@+id/appkefu_notification_contentview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+         
+        <TextView 
+            android:id="@+id/appkefu_notification_contentview_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#000000"
+            android:textSize="13sp" 
+            />
+        
+    </RelativeLayout>
+
+    <!-- 显示：您收到一条新消息， 默认显示，如果需要显示真实消息内容，请将此元素隐藏，并显示下面元素 -->
+    <TextView
+        android:id="@+id/appkefu_notification_contentview_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appkefu_notification_contentview_titlelayout"
+        android:layout_toRightOf="@id/appkefu_notification_contentview_icon"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:text="@string/appkefu_notification_contentview_content"
+        android:textSize="13sp"
+        android:visibility="gone"  />
+    
+    <!-- 显示具体消息内容，默认隐藏，如果需要显示真实消息内容，请去掉属性: android:visibility="gone", 并将上面的元素给隐藏 -->
+    <TextView
+        android:id="@+id/appkefu_notification_contentview_content_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appkefu_notification_contentview_titlelayout"
+        android:layout_toRightOf="@id/appkefu_notification_contentview_icon"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        />
+
+</RelativeLayout>
+
+
+

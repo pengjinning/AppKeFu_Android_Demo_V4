@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee" >
+
+    <RelativeLayout
+        android:id="@+id/appkefu_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/appkefu_title_bar"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/appkefu_titlebar_back_btn"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/appkefu_title_bar"
+            android:text="@string/appkefu_titlebar_backbtn_title"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/appkefu_titlebar_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:text="@string/appkefu_leavemsg_title"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appkefu_title_bar"
+        android:layout_marginTop="20sp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/appkefu_leavemsg_mobile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/appkefu_leavemsg_mobile_label"
+                    android:layout_width="80sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0sp"
+                    android:gravity="right"
+                    android:text="手机号"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/appkefu_leavemsg_mobile_value"
+                    android:layout_width="150sp"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_toRightOf="@+id/appkefu_leavemsg_mobile_label" />
+
+                <TextView
+                    android:id="@+id/appkefu_leavemsg_mobile_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_toRightOf="@+id/appkefu_leavemsg_mobile_value"
+                    android:text="必填"
+                    android:textColor="#ff0000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/appkefu_leavemsg_content_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/appkefu_leavemsg_mobile_layout"
+                android:layout_marginTop="20sp" >
+
+                <TextView
+                    android:id="@+id/appkefu_leavemsg_content_label"
+                    android:layout_width="80sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0sp"
+                    android:gravity="right"
+                    android:text="留言内容"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/appkefu_leavemsg_content_value"
+                    android:layout_width="150sp"
+                    android:layout_height="100sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_toRightOf="@+id/appkefu_leavemsg_content_label" />
+
+                <TextView
+                    android:id="@+id/appkefu_leavemsg_content_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_toRightOf="@+id/appkefu_leavemsg_content_value"
+                    android:text="必填"
+                    android:textColor="#ff0000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/appkefu_leavemsg_reply_type_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_below="@+id/appkefu_leavemsg_content_layout"
+                android:layout_marginTop="20sp" >
+
+                <TextView
+                    android:id="@+id/appkefu_leavemsg_reply_type_label"
+                    android:layout_width="80sp"
+                    android:layout_height="25sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0sp"
+                    android:layout_marginTop="15sp"
+                    android:gravity="right"
+                    android:text="回复方式"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:id="@+id/appkefu_leavemsg_reply_type_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_toRightOf="@+id/appkefu_leavemsg_reply_type_label"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/appkefu_leavemsg_reply_type_sms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:checked="true"
+                        android:text="短信回复"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <RadioButton
+                        android:id="@+id/appkefu_leavemsg_reply_type_telephone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="电话回复"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <RadioButton
+                        android:id="@+id/appkefu_leavemsg_reply_type_none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="不回复"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/appkefu_leavemsg_submit_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/appkefu_leavemsg_reply_type_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10sp" >
+
+                <Button
+                    android:id="@+id/appkefu_leavemsg_submit_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40sp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/appkefu_inputbar_recordvoicebtn"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="提交"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

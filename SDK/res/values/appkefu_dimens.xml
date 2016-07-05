@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="appkefu_indicator_right_padding">10dp</dimen>
+    <dimen name="appkefu_indicator_corner_radius">12dp</dimen>
+    <dimen name="appkefu_indicator_internal_padding">4dp</dimen>
+    <dimen name="appkefu_header_footer_left_right_padding">24dp</dimen>
+    <dimen name="appkefu_header_footer_top_bottom_padding">12dp</dimen>
+    
+    <dimen name="appkefu_popup_menu_width">100.0dip</dimen>
+    <dimen name="appkefu_popup_menu_yoff">5.0dip</dimen>
+    
+    <dimen name="appkefu_text_large">22sp</dimen>
+    <dimen name="appkefu_text_medium_large">20sp</dimen>
+    <dimen name="appkefu_text_medium">18sp</dimen>
+    <dimen name="appkefu_text_medium_small">16sp</dimen>
+    <dimen name="appkefu_text_small">14sp</dimen>
+    <dimen name="appkefu_text_small_tiny">12sp</dimen>
+
+    <dimen name="appkefu_dialog_title_text">@dimen/appkefu_text_large</dimen>
+    <dimen name="appkefu_dialog_body_text">@dimen/appkefu_text_medium</dimen>
+    <dimen name="appkefu_dialog_button_text">@dimen/appkefu_text_medium</dimen>
+
+    <dimen name="appkefu_dialog_side_padding">5dp</dimen>
+    <dimen name="appkefu_dialog_vertical_padding">0dp</dimen>
+
+</resources>
