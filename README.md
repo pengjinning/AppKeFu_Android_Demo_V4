@@ -1,6 +1,9 @@
 # 微客服
 安卓客服demo 4.x 版本 - 致力于为开发者提供极致用户体验的SDK
 
+其他:
+iOS版：https://github.com/pengjinning/AppKeFu_iOS_Demo_V4
+
 ## 预览
 
 <img src="/images/chat_list.png" alt="功能一览" width="260px" />
