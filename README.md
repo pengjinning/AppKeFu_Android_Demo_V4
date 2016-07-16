@@ -1,4 +1,6 @@
 # 微客服
+
+[![Join the chat at https://gitter.im/pengjinning/AppKeFu_Android_Demo_V4](https://badges.gitter.im/pengjinning/AppKeFu_Android_Demo_V4.svg)](https://gitter.im/pengjinning/AppKeFu_Android_Demo_V4?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 安卓客服demo 4.x 版本 - 致力于为开发者提供极致用户体验的SDK
 
 其他:
