@@ -38,7 +38,7 @@
          -->
         
         <!-- 显示圆形头像 -->
-        <com.appkefu.lib.ui.widgets.KFCircleImageView  
+        <com.appkefu.lib.ui.widgets.KFCircleImageView
             android:id="@+id/appkefu_message_item_header"
             android:layout_width="50sp"
             android:layout_height="50sp"
@@ -63,8 +63,8 @@
         <ImageView
             android:id="@+id/appkefu_message_item_content_image"
             style="@style/appkefu_chat_content_date_style"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_toLeftOf="@+id/appkefu_message_item_header"
             android:background="@drawable/appkefu_messageitem_tocontent"

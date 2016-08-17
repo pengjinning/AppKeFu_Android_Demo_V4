@@ -37,7 +37,6 @@
         -->
 
         <!-- 显示圆形头像 -->
-
         <com.appkefu.lib.ui.widgets.KFCircleImageView
             android:id="@+id/appkefu_message_item_header"
             android:layout_width="50sp"

@@ -86,8 +86,7 @@
         </activity>
                 
         <!-- 发送语音辅助service -->
-        <service
-            android:name="com.appkefu.lib.soundrecorder.KFRecorderService"/>
+        <service android:name="com.appkefu.lib.soundrecorder.KFRecorderService"/>
 
         <!-- im长连接 主service -->
         <service

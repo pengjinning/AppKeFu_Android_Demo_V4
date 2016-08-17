@@ -136,8 +136,12 @@ public static void Logout(Context context)
 ```
 
 
+## 更新日志
 
-
+#### 2016-08-17: version 4.0.4
+* 优化图片大小显示
+* 重构:所有常量迁移至KFConstant类
+* 完善语音播放模块
 
 
 

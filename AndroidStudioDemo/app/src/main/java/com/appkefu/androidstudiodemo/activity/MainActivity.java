@@ -9,6 +9,7 @@ import com.appkefu.lib.interfaces.KFAPIs;
 import com.appkefu.lib.interfaces.KFCallBack;
 import com.appkefu.lib.service.KFMainService;
 import com.appkefu.lib.service.KFXmppManager;
+import com.appkefu.lib.utils.KFConstants;
 import com.appkefu.lib.utils.KFLog;
 
 import android.os.Bundle;
@@ -69,11 +70,11 @@ public class MainActivity extends Activity {
 
 		IntentFilter intentFilter = new IntentFilter();
 		// 监听网络连接变化情况
-		intentFilter.addAction(KFMainService.ACTION_XMPP_CONNECTION_CHANGED);
+		intentFilter.addAction(KFConstants.ACTION_XMPP_CONNECTION_CHANGED);
 		// 监听消息
-		intentFilter.addAction(KFMainService.ACTION_XMPP_MESSAGE_RECEIVED);
+		intentFilter.addAction(KFConstants.ACTION_XMPP_MESSAGE_RECEIVED);
 		// 工作组在线状态
-		intentFilter.addAction(KFMainService.ACTION_XMPP_WORKGROUP_ONLINESTATUS);
+		intentFilter.addAction(KFConstants.ACTION_XMPP_WORKGROUP_ONLINESTATUS);
 
 		registerReceiver(mXmppreceiver, intentFilter);
 	}
@@ -437,12 +438,12 @@ public class MainActivity extends Activity {
 		public void onReceive(Context context, Intent intent) {
 			String action = intent.getAction();
 			// 监听：连接状态
-			if (action.equals(KFMainService.ACTION_XMPP_CONNECTION_CHANGED))// 监听链接状态
+			if (action.equals(KFConstants.ACTION_XMPP_CONNECTION_CHANGED))// 监听链接状态
 			{
 				updateStatus(intent.getIntExtra("new_state", 0));
 			}
 			// 监听：即时通讯消息
-			else if (action.equals(KFMainService.ACTION_XMPP_MESSAGE_RECEIVED))// 监听消息
+			else if (action.equals(KFConstants.ACTION_XMPP_MESSAGE_RECEIVED))// 监听消息
 			{
 				//消息内容
             	String body = intent.getStringExtra("body");
@@ -457,7 +458,7 @@ public class MainActivity extends Activity {
             	mAdapter.notifyDataSetChanged();
 			}
 			// 客服工作组在线状态
-			else if (action.equals(KFMainService.ACTION_XMPP_WORKGROUP_ONLINESTATUS)) {
+			else if (action.equals(KFConstants.ACTION_XMPP_WORKGROUP_ONLINESTATUS)) {
 				String fromWorkgroupName = intent.getStringExtra("from");
 				String onlineStatus = intent.getStringExtra("onlinestatus");
 				KFLog.d("客服工作组:" + fromWorkgroupName + " 在线状态:" + onlineStatus);// online：在线；offline:
