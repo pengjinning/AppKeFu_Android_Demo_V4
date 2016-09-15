@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.appkefu.demo2"
-    android:versionCode="90"
-    android:versionName="20151126" >
+    android:versionCode="390"
+    android:versionName="20160915" >
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -85,6 +85,7 @@
         <!-- 发送语音辅助service -->
         <service
             android:name="com.appkefu.lib.soundrecorder.KFRecorderService"/>
+        <service android:name="com.appkefu.lib.service.KFDownloadService"/>
 
         <!-- im长连接 主service -->
         <service

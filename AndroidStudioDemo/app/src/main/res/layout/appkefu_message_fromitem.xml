@@ -89,6 +89,7 @@
                 style="@style/appkefu_chat_content_date_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/appkefu_message_item_agentnickname"
                 android:background="@drawable/appkefu_messageitem_fromcontent"
                 android:visibility="gone" />
 
@@ -97,7 +98,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="15dp"
                 android:layout_toRightOf="@+id/appkefu_message_item_content_voice"
                 android:visibility="gone" />
             

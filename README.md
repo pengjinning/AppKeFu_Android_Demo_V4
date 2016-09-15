@@ -143,5 +143,11 @@ public static void Logout(Context context)
 * 重构:所有常量迁移至KFConstant类
 * 完善语音播放模块
 
+#### 2016-09-15: version 4.1.5
+* 优化用户体验
+* 支持接收播放PC客服端语音
+* 优化支持兼容Android 6.0动态权限
+* 优化兼容Unity
+
 
 
