@@ -149,5 +149,7 @@ public static void Logout(Context context)
 * 优化支持兼容Android 6.0动态权限
 * 优化兼容Unity
 
-
+#### 2016-09-28: version 4.2.0
+* 增加Ip Server登录模式， 解决部分移动运营商域名解析问题
+* 优化用户体验
 
