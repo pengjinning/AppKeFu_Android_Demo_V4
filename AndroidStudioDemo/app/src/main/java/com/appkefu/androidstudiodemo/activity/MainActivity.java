@@ -53,13 +53,6 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 
 		initView();
-
-		// 登录方式
-		KFAPIs.visitorLogin(this);
-
-		// 第二种登录方式，传入user_id, 注意user_id中只能包含数字、字母和下划线_,不能含有汉字
-		//KFAPIs.loginWithUserID("5610b39ce00dc2ca68c68086edcd801e", this);
-
 	}
 
 	@Override
