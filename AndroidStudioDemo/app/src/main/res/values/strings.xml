@@ -11,6 +11,7 @@
     <string name="unread_message_count">未读消息数目</string>
     <string name="show_faq">常见问题FAQ</string>
     <string name="leave_message">留言</string>
+    <string name="chat_with_wap">wapchat</string>
     <string name="title_activity_tag_list">TagListActivity</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>

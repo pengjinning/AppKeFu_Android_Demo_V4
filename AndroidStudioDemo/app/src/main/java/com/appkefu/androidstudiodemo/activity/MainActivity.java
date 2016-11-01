@@ -9,6 +9,7 @@ import com.appkefu.lib.interfaces.KFAPIs;
 import com.appkefu.lib.interfaces.KFCallBack;
 import com.appkefu.lib.service.KFMainService;
 import com.appkefu.lib.service.KFXmppManager;
+import com.appkefu.lib.ui.activity.KFWebBrowserActivity;
 import com.appkefu.lib.utils.KFConstants;
 import com.appkefu.lib.utils.KFLog;
 
@@ -121,6 +122,8 @@ public class MainActivity extends Activity {
 		mApiArray.add(entity);
 		entity = new ApiEntity(9, getString(R.string.unread_message_count));
 		mApiArray.add(entity);
+		entity = new ApiEntity(10, getString(R.string.chat_with_wap));
+		mApiArray.add(entity);
 
 		mAdapter.notifyDataSetChanged();
 		mApiListView.setOnItemClickListener(new OnItemClickListener() {
@@ -156,6 +159,9 @@ public class MainActivity extends Activity {
 					break;
 				case 8:
 					leaveMessage();
+					break;
+				case 10:
+					chatWithWap();
 					break;
 				default:
 					break;
@@ -420,6 +426,15 @@ public class MainActivity extends Activity {
 			
 		KFAPIs.startLeaveMessage(this, //Context, 上下文
 					"wgdemo"); //工作组ID
+	}
+
+	//10.wapchat, 嵌入wap网页
+	private void chatWithWap() {
+		Intent intent = new Intent(this, KFWebBrowserActivity.class);
+		intent.putExtra("ismenu", true);
+		intent.putExtra("title", "wap测试");//自定义标题
+		intent.putExtra("url", "http://free.appkefu.com/AppKeFu/float/wap/chat.php?wg=wgdemo&robot=false");
+		startActivity(intent);
 	}
 
 	//
