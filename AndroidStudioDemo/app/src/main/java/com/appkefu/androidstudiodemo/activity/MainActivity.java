@@ -433,7 +433,7 @@ public class MainActivity extends Activity {
 		Intent intent = new Intent(this, KFWebBrowserActivity.class);
 		intent.putExtra("ismenu", true);
 		intent.putExtra("title", "wap测试");//自定义标题
-		intent.putExtra("url", "http://free.appkefu.com/AppKeFu/float/wap/chat.php?wg=wgdemo&robot=false");
+		intent.putExtra("url", "http://free.appkefu.com/AppKeFu/float/wap/chat.php?wg=wgdemo&robot=false&hidenav=true");
 		startActivity(intent);
 	}
 
