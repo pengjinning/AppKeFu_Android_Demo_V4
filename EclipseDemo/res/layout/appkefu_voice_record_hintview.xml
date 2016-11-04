@@ -24,7 +24,7 @@
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:contentDescription="@string/appkefu_imageview_content_description"
-            android:src="@drawable/appkefu_voice_rcd_hint_amp1" />
+            android:src="@drawable/appkefu_voice_rcd_hint_amp7" />
         
     </LinearLayout>
 
