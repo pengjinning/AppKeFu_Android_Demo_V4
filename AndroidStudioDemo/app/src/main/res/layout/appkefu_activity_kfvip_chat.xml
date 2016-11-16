@@ -355,7 +355,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/appkefu_emotion_viewpager"
                 android:background="#F3F3F3"
-                android:layout_marginBottom="20sp"
                 android:gravity="center_horizontal" >
 
                 <ImageView

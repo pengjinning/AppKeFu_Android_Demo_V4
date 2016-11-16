@@ -153,3 +153,8 @@ public static void Logout(Context context)
 * 增加Ip Server登录模式， 解决部分移动运营商域名解析问题
 * 优化用户体验
 
+#### 2016-11-16: version 4.3.0
+* 优化内存处理
+* 解决OOM的bug
+
+
