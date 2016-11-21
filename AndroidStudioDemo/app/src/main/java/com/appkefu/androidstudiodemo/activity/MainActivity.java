@@ -90,7 +90,10 @@ public class MainActivity extends Activity {
 	protected void onStop() {
 		super.onStop();
 
-		unregisterReceiver(mXmppreceiver);
+		if (mXmppreceiver != null){
+			unregisterReceiver(mXmppreceiver);
+			mXmppreceiver = null;
+		}
 	}
 
 	private void initView() {

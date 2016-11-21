@@ -157,4 +157,9 @@ public static void Logout(Context context)
 * 优化内存处理
 * 解决OOM的bug
 
+#### 2016-11-21: version 4.3.1
+* 优化一个小bug
+
+
+
 
