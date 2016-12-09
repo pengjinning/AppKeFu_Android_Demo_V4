@@ -54,6 +54,18 @@
             android:name="com.appkefu.lib.appkey"
             android:value="6f8103225b6ca0cfec048ecc8702dbce" />
 
+        <!--兼容android N 24相机访问权限-->
+        <!-- https://inthecheesefactory.com/blog/how-to-share-access-to-file-with-fileprovider-on-android-nougat/en -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.appkefu.androidstudiodemo.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/appkefu_provider_paths"/>
+        </provider>
+
         <!-- 聊天窗口, 可通过修改layout文件appkefu_activity_kfvip_chat.xml自定义窗口UI -->
         <activity android:name="com.appkefu.lib.ui.activity.KFChatActivity" 
             	  android:theme="@style/appkefu_theme_no_titlebar"

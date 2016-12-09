@@ -160,6 +160,9 @@ public static void Logout(Context context)
 #### 2016-11-21: version 4.3.1
 * 优化一个小bug
 
+#### 2016-12-09: version 4.3.5
+* 兼容Android N, 24 相机访问权限处理
+
 
 
 
