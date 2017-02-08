@@ -56,6 +56,7 @@
 
         <!--兼容android N 24相机访问权限-->
         <!-- https://inthecheesefactory.com/blog/how-to-share-access-to-file-with-fileprovider-on-android-nougat/en -->
+        <!-- http://stackoverflow.com/questions/38200282/android-os-fileuriexposedexception-file-storage-emulated-0-test-txt-exposed -->
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="com.appkefu.androidstudiodemo.provider"

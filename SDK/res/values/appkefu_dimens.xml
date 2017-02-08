@@ -24,4 +24,5 @@
     <dimen name="appkefu_dialog_side_padding">5dp</dimen>
     <dimen name="appkefu_dialog_vertical_padding">0dp</dimen>
 
+
 </resources>
