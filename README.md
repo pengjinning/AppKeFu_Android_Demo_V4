@@ -138,6 +138,9 @@ public static void Logout(Context context)
 
 ## 更新日志
 
+#### 2017-04-12: version 4.5.0
+* 优化发送状态更新
+
 #### 2017-02-17: version 4.4.2
 * 优化兼容Android N
 
