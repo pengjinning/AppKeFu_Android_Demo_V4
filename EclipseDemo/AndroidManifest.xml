@@ -112,13 +112,6 @@
             </intent-filter>
         </service>
 
-        <!-- 获取OpenUDID, 用于唯一标示用户 -->
-        <service android:name="com.appkefu.OpenUDID.OpenUDID_service" >
-            <intent-filter>
-                <action android:name="org.openudid.GETUDID" />
-            </intent-filter>
-        </service>
-
         <!-- 可选：监听网络变化 -->
         <receiver android:name="com.appkefu.lib.receivers.KFNetworkConnectivityReceiver" >
             <intent-filter>

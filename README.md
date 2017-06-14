@@ -16,6 +16,45 @@ iOS版：https://github.com/pengjinning/AppKeFu_iOS_Demo_V4
 <img src="/images/chat_tags.png" alt="个人标签" width="260px" />
 <img src="/images/chat_leavemsg.png" alt="留言" width="260px" />
 
+## 更新日志
+
+#### 2017-06-14: version 4.8.0
+* 优化兼容性
+
+#### 2017-04-12: version 4.5.0
+* 优化发送状态更新
+
+#### 2017-02-17: version 4.4.2
+* 优化兼容Android N
+
+#### 2017-02-08: version 4.4.0
+* 优化发送图片
+
+#### 2016-12-09: version 4.3.5
+* 兼容Android N, 24 相机访问权限处理
+
+#### 2016-11-21: version 4.3.1
+* 优化一个小bug
+
+#### 2016-11-16: version 4.3.0
+* 优化内存处理
+* 解决OOM的bug
+
+#### 2016-09-28: version 4.2.0
+* 增加Ip Server登录模式， 解决部分移动运营商域名解析问题
+* 优化用户体验
+
+#### 2016-09-15: version 4.1.5
+* 优化用户体验
+* 支持接收播放PC客服端语音
+* 优化支持兼容Android 6.0动态权限
+* 优化兼容Unity
+
+#### 2016-08-17: version 4.0.4
+* 优化图片大小显示
+* 重构:所有常量迁移至KFConstant类
+* 完善语音播放模块
+
 
 ## 开发文档
 
@@ -136,41 +175,6 @@ public static void Logout(Context context)
 ```
 
 
-## 更新日志
-
-#### 2017-04-12: version 4.5.0
-* 优化发送状态更新
-
-#### 2017-02-17: version 4.4.2
-* 优化兼容Android N
-
-#### 2017-02-08: version 4.4.0
-* 优化发送图片
-
-#### 2016-12-09: version 4.3.5
-* 兼容Android N, 24 相机访问权限处理
-
-#### 2016-11-21: version 4.3.1
-* 优化一个小bug
-
-#### 2016-11-16: version 4.3.0
-* 优化内存处理
-* 解决OOM的bug
-
-#### 2016-09-28: version 4.2.0
-* 增加Ip Server登录模式， 解决部分移动运营商域名解析问题
-* 优化用户体验
-
-#### 2016-09-15: version 4.1.5
-* 优化用户体验
-* 支持接收播放PC客服端语音
-* 优化支持兼容Android 6.0动态权限
-* 优化兼容Unity
-
-#### 2016-08-17: version 4.0.4
-* 优化图片大小显示
-* 重构:所有常量迁移至KFConstant类
-* 完善语音播放模块
 
 
 
