@@ -1,6 +1,10 @@
 # 微客服
 安卓客服demo 4.x 版本 - 致力于为开发者提供极致用户体验的SDK
 
+## aar 和 jar 集成方式只需要二选其一
+* jar 包集成方式需要同时拷贝jar包和res资源
+* aar 集成方式只需要拷贝集成aar包即可，build.gralde文件具体参考相应demo
+
 其他:
 iOS版：https://github.com/pengjinning/AppKeFu_iOS_Demo_V4
 
@@ -17,6 +21,9 @@ iOS版：https://github.com/pengjinning/AppKeFu_iOS_Demo_V4
 <img src="/images/chat_leavemsg.png" alt="留言" width="260px" />
 
 ## 更新日志
+
+#### 2017-06-20: version 4.8.3
+* 增加aar集成方式
 
 #### 2017-06-19: version 4.8.2
 * 优化兼容性
