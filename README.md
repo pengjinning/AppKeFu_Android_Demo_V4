@@ -22,6 +22,9 @@ iOS版：https://github.com/pengjinning/AppKeFu_iOS_Demo_V4
 
 ## 更新日志
 
+#### 2017-07-13: version 4.9.0
+* 优化更新设备信息接口
+
 #### 2017-06-20: version 4.8.3
 * 增加aar集成方式
 
