@@ -24,6 +24,9 @@ iOS版：https://github.com/pengjinning/AppKeFu_iOS_Demo_V4
 
 ## 更新日志
 
+#### 2017-10-01: version 4.9.2
+* 启用新域名weikefu.net
+
 #### 2017-07-13: version 4.9.0
 * 优化更新设备信息接口
 
