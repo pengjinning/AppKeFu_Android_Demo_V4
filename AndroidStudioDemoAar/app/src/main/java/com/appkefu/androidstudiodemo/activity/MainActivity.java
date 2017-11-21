@@ -188,7 +188,7 @@ public class MainActivity extends Activity {
 				5, // 5. 默认显示消息数量
 				//修改SDK自带的头像有两种方式，1.直接替换appkefu_message_toitem和appkefu_message_fromitem.xml里面的头像，2.传递网络图片自定义
 				null, //"http://47.90.33.185/PHP/XMPP/gyfd/chat/web/img/kefu-avatar.png",//6. 修改默认客服头像，如果想显示客服真实头像，设置此参数为null
-				"http://47.90.33.185/PHP/XMPP/gyfd/chat/web/img/user-avatar.png",		//7. 修改默认用户头像, 如果不想修改默认头像，设置此参数为null
+				"http://admin.weikefu.net/visitor_default_avatar.png",		//7. 修改默认用户头像, 如果不想修改默认头像，设置此参数为null
 				false, // 8. 默认机器人应答
 				true,  //9. 是否强制用户在关闭会话的时候 进行“满意度”评价， true:是， false:否
 				null);
@@ -282,7 +282,7 @@ public class MainActivity extends Activity {
 		KFAPIs.startECChat(this,
 				"wgdemo", 				//1. 客服工作组名称(请务必保证大小写一致)，请在管理后台分配
 				"客服小秘书",				//2. 会话界面标题，可自定义
-				"商品简介商品简介商品简介商品简介商品简介 100元  <img src=\"http://appkefu.com/AppKeFu/images/dingyue.jpg\">",			    
+				"商品简介商品简介商品简介商品简介商品简介 100元  <img src=\"http://admin.weikefu.net/AppKeFu/images/dingyue.jpg\">",
 										//3. 附加信息，在成功对接客服之后，会自动将此信息发送给客服;
 										//   如果不想发送此信息，可以将此信息设置为""或者null
 				true,					//4. 是否显示自定义菜单,如果设置为显示,请务必首先在管理后台设置自定义菜单,
@@ -294,10 +294,10 @@ public class MainActivity extends Activity {
 				false,					//8. 默认机器人应答
 				
 				true,					//9. 是否显示商品详情，显示：true；不显示：false
-				"http://appkefu.com/AppKeFu/images/dingyue.jpg",//10.商品详情图片
+				"http://admin.weikefu.net/AppKeFu/images/dingyue.jpg",//10.商品详情图片
 				"商品简介商品简介商品简介商品简介商品简介",					//11.商品详情简介
 				"100元",											//12.商品详情价格
-				"http://appkefu.com",							//13.商品网址链接
+				"http://weikefu.net",							//13.商品网址链接
 				"goodsCallbackId", 								//14.点击商品详情布局回调参数
 				
 				false,											//15.退出对话的时候是否强制评价，强制：true，不评价：false
@@ -397,8 +397,8 @@ public class MainActivity extends Activity {
 						// 显示:true, 不显示:false
 				0, // 5. 默认显示消息数量
 				//修改SDK自带的头像有两种方式，1.直接替换appkefu_message_toitem和appkefu_message_fromitem.xml里面的头像，2.传递网络图片自定义
-				"http://47.90.33.185/PHP/XMPP/gyfd/chat/web/img/kefu-avatar.png",		//6. 修改默认客服头像，如果不想修改默认头像，设置此参数为null
-				"http://47.90.33.185/PHP/XMPP/gyfd/chat/web/img/user-avatar.png",		//7. 修改默认用户头像, 如果不想修改默认头像，设置此参数为null
+				"http://admin.weikefu.net/agent_default_avatar.png",		//6. 修改默认客服头像，如果不想修改默认头像，设置此参数为null
+				"http://admin.weikefu.net/visitor_default_avatar.png",		//7. 修改默认用户头像, 如果不想修改默认头像，设置此参数为null
 				true, // 8. 默认机器人应答
 				false,  //9. 是否强制用户在关闭会话的时候 进行“满意度”评价， true:是， false:否
 				null
@@ -436,7 +436,7 @@ public class MainActivity extends Activity {
 		Intent intent = new Intent(this, KFWebBrowserActivity.class);
 		intent.putExtra("ismenu", true);
 		intent.putExtra("title", "wap测试");//自定义标题
-		intent.putExtra("url", "http://free.appkefu.com/AppKeFu/float/wap/chat.php?wg=wgdemo&robot=false&hidenav=true");
+		intent.putExtra("url", "http://free.weikefu.net/AppKeFu/weikefu/wap/chat.php?wg=wgdemo&robot=false&hidenav=true&no=no");
 		startActivity(intent);
 	}
 
