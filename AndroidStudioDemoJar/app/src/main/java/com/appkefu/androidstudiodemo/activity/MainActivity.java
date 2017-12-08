@@ -28,17 +28,17 @@ import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 
 /**
- * 微客服(AppKeFu.com)
+ * 微客服(Weikefu.net)
  * 微客服，集成到您App里的在线客服 国内首款App里的在线客服，支持文字、表情、图片、语音聊天。 立志为移动开发者提供最好的在线客服
  * 技术交流QQ 2群:474794719
- * 客服开发文档： http://admin.appkefu.com/AppKeFu/doc/android.html
+ * 客服开发文档： http://admin.weikefu.net/AppKeFu/doc/android.html
  */
      
 public class MainActivity extends Activity {
  
 	/**
 	 * 提示：如果已经运行过旧版的Demo，请先在手机上删除原先的App再重新运行此工程
-	 * 更多使用帮助参见：http://admin.appkefu.com/AppKeFu/doc/android.html
+	 * 更多使用帮助参见：http://admin.weikefu.net/AppKeFu/doc/android.html
 	 * 注意：开发者将SDK嵌入到自己的应用中之后，至少要修改两处： 1.appkey 2.客服工作组名称(参见函数：startChat)
 	 */
   
