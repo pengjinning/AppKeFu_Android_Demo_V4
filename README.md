@@ -24,6 +24,9 @@ iOS版：https://github.com/pengjinning/AppKeFu_iOS_Demo_V4
 
 ## 更新日志
 
+#### 2018-03-30: version 4.9.7
+* 优化
+
 #### 2018-03-27: version 4.9.6
 * 优化已知问题
 

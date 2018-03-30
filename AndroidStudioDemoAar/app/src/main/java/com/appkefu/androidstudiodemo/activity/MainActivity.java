@@ -31,7 +31,7 @@ import android.widget.AdapterView.OnItemClickListener;
  * 微客服(Weikefu.net)
  * 微客服，集成到您App里的在线客服 国内首款App里的在线客服，支持文字、表情、图片、语音聊天。 立志为移动开发者提供最好的在线客服
  * 技术交流QQ 2群:474794719
- * 客服开发文档： http://admin.weikefu.netm/AppKeFu/doc/android.html
+ * 客服开发文档： http://admin.weikefu.net/AppKeFu/doc/android.html
  */
      
 public class MainActivity extends Activity {
