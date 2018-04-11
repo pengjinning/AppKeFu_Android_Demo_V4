@@ -137,11 +137,11 @@
             </intent-filter>
         </receiver>
         <!-- 监听客服发送过来的消息 -->
-        <receiver android:name="com.appkefu.lib.receivers.KFMessageReceiver">
-            <intent-filter>
-                <action android:name="com.appkefu.lib.action.XMPP.MESSAGE_RECEIVED" />
-            </intent-filter>
-        </receiver>
+        <!--<receiver android:name="com.appkefu.lib.receivers.KFMessageReceiver">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.appkefu.lib.action.XMPP.MESSAGE_RECEIVED" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
         <!-- 可选：检测屏幕是否解锁,以便重连服务器 -->
         <receiver android:name="com.appkefu.lib.receivers.KFScreenReceiver">
             <intent-filter>
