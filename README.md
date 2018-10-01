@@ -1,7 +1,11 @@
-# 微客服
+# 微客服(Depreciated)
 
 [![Join the chat at https://gitter.im/pengjinning/AppKeFu_Android_Demo_V4](https://badges.gitter.im/pengjinning/AppKeFu_Android_Demo_V4.svg)](https://gitter.im/pengjinning/AppKeFu_Android_Demo_V4?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 安卓客服demo 4.x 版本 - 致力于为开发者提供极致用户体验的SDK
+
+## 请前往新平台
+
+- [萝卜丝·云客服](https://github.com/pengjinning/bytedesk-android)
 
 ## aar 和 jar 集成方式只需要二选其一
 * jar 包集成方式需要同时拷贝jar包和res资源
